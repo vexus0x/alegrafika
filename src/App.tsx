@@ -10,6 +10,21 @@ const BehanceIcon = ({ className }: { className?: string }) => (
 )
 
 // Sample portfolio items
+/* ============================================
+   PLACEHOLDER: PORTFOLIO PROJECTS
+   Replace with your actual portfolio items
+   Each object represents one project card
+   
+   Image locations:
+   - /portfolio/coffee-brand.jpg
+   - /portfolio/skincare-pack.jpg
+   - /portfolio/beer-label.jpg
+   - /portfolio/restaurant-brand.jpg
+   - /portfolio/sauce-pack.jpg
+   - /portfolio/wine-label.jpg
+   
+   Recommended: 800x600px images for 4:3 aspect ratio
+   ============================================ */
 const portfolioItems = [
   {
     id: 1,
@@ -209,6 +224,10 @@ function App() {
             <span className="inline-block py-2 px-4 mb-6 text-sm font-semibold tracking-widest uppercase text-grafik-accent bg-grafik-accent/10 rounded-full">
               Graphic Design & Print Specialist
             </span>
+            {/* ============================================ */}
+            {/* PLACEHOLDER: HERO TAGLINE */}
+            {/* Replace with your own tagline if desired */}
+            {/* ============================================ */}
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-display font-bold tracking-tight mb-6">
               Crafting Brands That <br className="hidden sm:block" />
               <span className="text-grafik-accent">Print Perfectly</span>
@@ -250,6 +269,14 @@ function App() {
               transition={{ duration: 0.6 }}
             >
               <div className="aspect-[4/5] bg-grafik-cream rounded-2xl overflow-hidden relative">
+                {/* ============================================ */}
+                {/* PLACEHOLDER: DESIGNER HEADSHOT */}
+                {/* Replace this entire div with actual headshot */}
+                {/* Options: */}
+                {/*   - <img src="/images/headshot.jpg" className="w-full h-full object-cover" /> */}
+                {/*   - <img src="/images/headshot.jpg" alt="[Designer Name]" className="w-full h-full object-cover" /> */}
+                {/* Recommended: 800x1000px portrait photo */}
+                {/* ============================================ */}
                 <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-grafik-cream to-gray-200">
                   <div className="text-center">
                     <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-grafik-accent/20 flex items-center justify-center">
@@ -279,6 +306,10 @@ function App() {
               </p>
 
               <div className="space-y-4 mb-8">
+                {/* ============================================ */}
+                {/* PLACEHOLDER: TIMELINE */}
+                {/* Update with your actual career milestones */}
+                {/* ============================================ */}
                 {timeline.map((item, index) => (
                   <div key={index} className="flex items-start gap-4">
                     <div className="w-16 h-16 bg-grafik-accent/10 rounded-lg flex items-center justify-center shrink-0">
@@ -295,6 +326,10 @@ function App() {
               <div>
                 <h4 className="font-semibold mb-4">Tools & Software</h4>
                 <div className="flex flex-wrap gap-2">
+                  {/* ============================================ */}
+                  {/* PLACEHOLDER: TOOLS & SOFTWARE LIST */}
+                  {/* Replace with actual tools you use */}
+                  {/* ============================================ */}
                   {['Adobe Illustrator', 'Adobe Photoshop', 'Adobe InDesign', 'Affinity Designer', 'Figma', 'Cricut Design'].map((tool) => (
                     <span key={tool} className="px-4 py-2 bg-grafik-cream rounded-full text-sm font-medium">
                       {tool}
@@ -321,6 +356,10 @@ function App() {
           </motion.div>
 
           <div className="grid md:grid-cols-2 gap-8">
+            {/* ============================================ */}
+            {/* PLACEHOLDER: SERVICES CARDS */}
+            {/* Update service titles, descriptions, and deliverables below */}
+            {/* ============================================ */}
             {services.map((service, index) => (
               <motion.div
                 key={service.title}
@@ -335,6 +374,10 @@ function App() {
                 </div>
                 <h3 className="text-2xl font-display font-bold mb-3">{service.title}</h3>
                 <p className="text-gray-400 mb-6 leading-relaxed">{service.description}</p>
+                {/* ============================================ */}
+                {/* PLACEHOLDER: SERVICE DELIVERABLES */}
+                {/* Update list items per service */}
+                {/* ============================================ */}
                 <div className="space-y-2">
                   {service.deliverables.map((item) => (
                     <div key={item} className="flex items-center gap-2 text-sm text-gray-500">
@@ -388,6 +431,12 @@ function App() {
                 transition={{ delay: index * 0.1 }}
                 className="group"
               >
+                {/* ============================================ */}
+                {/* PLACEHOLDER: PROJECT IMAGE */}
+                {/* Location: /public/portfolio/[image-filename].jpg */}
+                {/* Example: /public/portfolio/coffee-brand.jpg */}
+                {/* Recommended: 800x600px, high quality */}
+                {/* ============================================ */}
                 <div className="aspect-[4/3] bg-grafik-cream rounded-xl overflow-hidden relative mb-4">
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="text-center">
@@ -443,6 +492,10 @@ function App() {
               </p>
 
               <div className="space-y-6">
+                {/* ============================================ */}
+                {/* PLACEHOLDER: CONTACT INFORMATION */}
+                {/* Replace with actual email and phone */}
+                {/* ============================================ */}
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-grafik-accent/10 rounded-xl flex items-center justify-center">
                     <Mail className="w-5 h-5 text-grafik-accent" />
@@ -464,6 +517,10 @@ function App() {
                 </div>
               </div>
 
+              {/* ============================================ */}
+              {/* PLACEHOLDER: SOCIAL LINKS */}
+              {/* Replace href="#" with actual profile URLs */}
+              {/* ============================================ */}
               <div className="flex items-center gap-4 mt-8">
                 <a href="#" className="w-10 h-10 bg-grafik-black text-white rounded-full flex items-center justify-center hover:bg-grafik-accent transition-colors">
                   <Instagram className="w-5 h-5" />
@@ -528,6 +585,10 @@ function App() {
       </section>
 
       {/* Footer */}
+      {/* ============================================ */}
+      {/* PLACEHOLDER: FOOTER YEAR */}
+      {/* Update year if needed */}
+      {/* ============================================ */}
       <footer className="py-8 bg-grafik-black text-center">
         <p className="text-gray-500 text-sm">
           © 2024 Alegrafika. All rights reserved. | Crafting Brands That Print Perfectly.
